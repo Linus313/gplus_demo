@@ -1,0 +1,26 @@
+<h1><%= link_to "User #{@user.id}", @user %></h1>
+
+<p>
+  <center><h2><%= @displayName %></h2></center>
+  <center><%= image_tag(@image, :alt => "ProfileImage", :width => 50, :height => 50)%></center>
+  <center><h3><%= link_to "Profile Url", @profileUrl%></h3></center>
+  <center><h3>Gender: <%= @gender %></h3></center>
+  <center><h3>Birthday: <%= @birthday %></h3></center>
+  <center><h3>Current Location: <%= @currentLoca %></h3></center>
+  <br />
+  <b>My profile:</b>
+  <br />
+  <%= @profile %>
+</p>
+
+<p>
+  <b>People with the same name as me:</b>
+  <br />
+  <%= @search_results %>
+</p>
+
+<p>
+  <b>Another page of people with the same name as me:</b>
+  <br />
+  <%= @more_search_results %>
+</p>
